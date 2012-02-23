@@ -22,11 +22,10 @@ if (!file_exists('GameEngine/config.php')) {
 header("Location: install/");
 }
 include("GameEngine/config.php");
-include("GameEngine/config.php1");
 include("GameEngine/Database.php");
 include("GameEngine/Lang/".LANG.".php");
 ?>
-<h3 class="pop popgreen bold">Please choose a server.</h3>
+<h3 class="pop popgreen bold">Please Choose a Server.</h3>
 <div class="server serverA serverbig servernormal serverbignormal ">
 <a class="link" onclick="" href="login.php" title="Log in to Server 1.">
 <span class="name">Server 1</span>
@@ -38,10 +37,10 @@ include("GameEngine/Lang/".LANG.".php");
 </a>
 
 </div>
-<h3 class="pop popgreen bold">Please choose a server.</h3>
+<h3 class="pop popgreen bold">Please Choose a Server.</h3>
 <div class="server serverB serverbig servernormal serverbignormal ">
 <a class="link" onclick="" href="login.php" title="Log in to Server 2.">
-<span class="name">Server 1</span>
+<span class="name">Server 2</span>
 <span class="player" title="Players in total: <?php echo $users; ?>"><?php echo $users; ?></span>
 <span class="online" title="Players online: <?php echo $online; ?>"><?php echo $online; ?></span>
 <span class="start">The server started <?php echo round((time()-COMMENCE)/86400);?> days ago.</span>
@@ -50,4 +49,3 @@ include("GameEngine/Lang/".LANG.".php");
 </a>
 
 </div>
-
